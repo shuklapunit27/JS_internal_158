@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="form1">
+      <input
+        type="text"
+        placeholder="Enter Name"
+        id="name"
+        style="display: inline-block"
+      />
+      <p id="error" style="color: red; display: inline-block"></p>
+      <input
+        type="password"
+        placeholder="Enter Password"
+        id="pass"
+        style="display: inline-block"
+      />
+
+      <input
+        type="submit"
+        id="submitBtn"
+        style="display: inline-block"
+        value="Submit"
+      />
+    </form>
+    <script>
+      document
+        .getElementById("form1")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          let name_check = document.getElementById("name").value.trim();
+          let error = document.getElementById("error");
+          if (name_check.length === 0) {
+            // alert("value required");
+            error.innerHTML = "Name is required";
+          }
+        });
+    </script>
+  </body>
+</html>
