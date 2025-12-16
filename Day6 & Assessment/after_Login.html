@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <h1 id="hd1">This is your registration page</h1>
+
+    <script>
+      let params = new URLSearchParams(window.location.search);
+      let na = params.get("userId");
+      //   document.getElementById("hd1").innerHTML = `Welcome ${na}`;
+
+      let params2 = new URLSearchParams(window.location.search);
+      let pass1 = params.get("pass");
+      document.getElementById(
+        "hd1"
+      ).innerHTML = `Welcome ${na}, your password is - ${pass1}`;
+    </script>
+  </body>
+</html>
