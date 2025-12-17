@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration Success</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .box {
+        background: white;
+        padding: 25px;
+        border-radius: 5px;
+        color: green;
+        width: 350px;
+      }
+      h2 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h2>Registration Successful!</h2>
+      <p id="data"></p>
+    </div>
+
+    <script>
+      document.getElementById("data").innerHTML = `
+    Name: ${sessionStorage.getItem("name")}<br>
+    Email: ${sessionStorage.getItem("email")}<br>
+    Gender: ${sessionStorage.getItem("gender")}<br>
+    Course: ${sessionStorage.getItem("course")}
+  `;
+    </script>
+  </body>
+</html>

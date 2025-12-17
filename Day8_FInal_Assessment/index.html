@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HCLtech Assessment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <section class="header-top">
+        <div class="logo">Logo</div>
+        <div class="company-name">HCLtech Assessment</div>
+        <div class="logo">Logo</div>
+      </section>
+      <nav class="navbar">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Guide</li>
+          <li>Gallery</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="main-section images">Images</section>
+
+      <section class="main-section scroll-area">
+        <p>This is scrollable content area.</p>
+        <p>More content...</p>
+        <p>More content...</p>
+        <p>More content...</p>
+        <p>More content...</p>
+      </section>
+      <section class="main-section registration">
+        <h2>Registration Form</h2>
+
+        <form id="registration" novalidate>
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter name" />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter email" />
+
+          <fieldset>
+            <legend>Gender</legend>
+            <label>
+              <input type="radio" name="gender" value="Male" /> Male
+            </label>
+            <label>
+              <input type="radio" name="gender" value="Female" /> Female
+            </label>
+          </fieldset>
+
+          <label for="course">Course:</label>
+          <select id="course">
+            <option value="">-- Select --</option>
+            <option>BTech</option>
+            <option>MTech</option>
+            <option>PhD</option>
+          </select>
+
+          <label class="terms">
+            <input type="checkbox" id="terms" />
+            I agree to Terms & Conditions
+          </label>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 HCLtech | All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: #f2f2f2;
+}
+header {
+  background-color: #003366;
+  color: white;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo {
+  width: 80px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.company-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+.navbar {
+  background-color: #00509e;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.navbar li:hover {
+  background-color: #003366;
+}
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  padding: 20px;
+}
+.main-section {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  min-height: 300px;
+}
+.images {
+  text-align: center;
+  font-weight: bold;
+}
+
+.scroll-area {
+  overflow-y: auto;
+  max-height: 300px;
+}
+.registration h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+fieldset {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+fieldset label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+fieldset input[type="radio"] {
+  margin-right: 5px;
+}
+.terms {
+  margin-top: 10px;
+  font-weight: normal;
+}
+button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background-color: #00509e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #003366;
+}
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
